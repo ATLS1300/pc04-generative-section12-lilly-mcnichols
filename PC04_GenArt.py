@@ -8,13 +8,11 @@ I chose to draw a pumpkin because this week the weather finally got cold and I a
 import turtle, random
 from turtle import Screen
 turtle.clearscreen()
-#background = turtle.Turtle()
 turtle.bgcolor("black")
 turtle.penup()
 
 
-pumpkin =  turtle.Turtle()
-pumpkin.speed(10)
+pumpkin = turtle.Turtle()
 pumpkin.goto(0,-350)
 pumpkin.color("DarkOrange1")
 pumpkin.begin_fill()
@@ -24,7 +22,6 @@ pumpkin.left(180)
 pumpkin.penup()
 
 square = turtle.Turtle()
-square.speed(10)
 square.color("black")
 square.penup()
 square.goto(-150,50)
@@ -46,7 +43,6 @@ for count in range(3):
 square.end_fill()
 
 stump = turtle.Turtle()
-stump.speed(10)
 stump.color("sienna4")
 stump.penup()
 stump.goto(30,290)
@@ -61,14 +57,11 @@ stump.forward(100)
 stump.end_fill()
 
 teeth = turtle.Turtle()
-teeth.speed(10)
 teeth.color("black")
 teeth.penup()
 teeth.goto(-200,-120)
-#teeth.begin_fill()
 teeth.pendown()
 toothpos = -120
-#teeth.setheading()
 for count in range(4):
     teeth.begin_fill()
     for count in range(3):
